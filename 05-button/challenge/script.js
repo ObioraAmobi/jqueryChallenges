@@ -2,6 +2,10 @@ $(document).ready(function() {
 
 	var $card;
 
+	$("div.card.stream1").on("click", function(){
+		$(this).css("background-color","red");
+	});
+
 	$("p").on("click", function(){
 		$(this).addClass("toRed");
 		//$(this).css("color","red"); //all paragraph's text becomes red when clicked
@@ -27,4 +31,15 @@ $(document).ready(function() {
 	$("a").on("mouseleave", function(){
 		$("body").css("background-color","grey");
 	});
+
+
+	$("a").after("<button>Hi!</button>")
+
+$("a").after("<button>Hi!</button>").remove()
+
+var $links = $("a");
+
+$links.after("<button>Hi!</button>").remove()
+
+
 });
